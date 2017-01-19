@@ -18,4 +18,6 @@ rvm:
   - ruby-head
   - jruby-head
   - jruby-9.1.7.0
-  - rbx-2
+
+script:
+  bundle exec rake spec
