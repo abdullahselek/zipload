@@ -20,4 +20,12 @@ describe Zipload do
     	end
   	end
 
+	describe '#file from url to given directory' do
+		let(:input) { 'https://dl.dropboxusercontent.com/u/7340491/zipload.zip' }
+		let(:output) { Zipload.download_file_into_directory(input, '/Users/abdullahselek') }
+		it 'should download file into directory' do
+			expect(output).not_to be_empty
+		end
+	end
+
 end
