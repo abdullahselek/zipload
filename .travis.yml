@@ -20,6 +20,6 @@ rvm:
   - jruby-9.1.7.0
 
 script:
-  pwd
-  rspec
+  - cd /home/travis/build/abdullahselek/zipload
+  - rspec
   # bundle exec rspec spec
