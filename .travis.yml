@@ -20,5 +20,6 @@ rvm:
   - jruby-9.1.7.0
 
 script:
-  RAILS_ENV=test bundle exec rspec spec
+  pwd
+  rspec
   # bundle exec rspec spec
